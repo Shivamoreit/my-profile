@@ -1,17 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shiva more</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+	<title>Shiva More</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/responsive.css">
+	<link rel="icon" type="image/png" href="./public/favicon.ico">
 </head>
 <body>
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row d-flex justify-content-between">
 				<div class="col-md-auto">
-					<a href="#!" class="logo"><img src="./public/my" alt="logo"></a>
+					<a href class="logo"><img src="./public/name logo.png" alt="logo"></a>
 				</div>
 				<div class="col-md-auto">
 					<nav class="main_nav">
@@ -27,7 +34,7 @@
 		</div>
 	</header>
 
-	<div class="banner d-flex align-items-center" style="background-image: url("./public/my photo.jepg");"
+	<div class="banner d-flex align-items-left" style="background-image:url('./public/my\ photo.jpeg');">
 		id="home">
 		<ul class="socila_links">
 			<li><a href="https://www.facebook.com/shiva.more.75873" target="_blank"><i class="fa fa-facebook"
@@ -90,11 +97,48 @@
 						</ul>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
+				<div class="portfolio-section" id="projects">
+					<div id="port_pop_pic_bg"></div>
+					<div id="port_pop_pic"></div>
+					<div class="container-fluid">
+						<h2 class="text-center bdr-btm bdr-btm-center">Projects</h2>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="portfolio-box" style="background-image: url('./static/images/dance.png');">
+									<h3><a href=" https://shivamoreit.github.io/my-profile/">login form</a>
+									</h3>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="portfolio-box" style="background-image: url('./static/images/profile.png');">
+									<h3>Personol Profile Website</h3>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="portfolio-box" style="background-image: url('./static/images/mynotes.png');">
+									<h3>MyNotes Website</h3>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="portfolio-box" style="background-image: url('./static/images/hostel.png');">
+									<h3>ragistration form</h3>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="portfolio-box" style="background-image: url('./static/images/food.png');">
+									<h3>Online csc</h3>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="portfolio-box" style="background-image: url('./static/images/shramcardloginpage.png');">
+									<h3>login Page</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
 
-	<
 	<div class="contact-section d-md-flex" id="contact">
 		<div class="col-md-6 col-12 contact_section_left">
 			<div class="contact_box">
@@ -110,7 +154,7 @@
 			<div class="contact_box">
 				<i class="fa fa-map-marker"></i>
 				<h3>Address</h3>
-				<p>at-wanjareadi tq-badnapur jalna maharashtra-(431215)</p>
+				<p>at-Wanjareadi Tq-Badnapur Jalna Maharashtra-(431215)</p>
 			</div>
 		</div>
 		<div class="col-md-6 col-12 contact_section_right d-flex align-items-center">
@@ -199,6 +243,7 @@ body,html{
 	background-size: cover;
 	color: rgb(241, 238, 238);
 	padding: 100px 50px 100px 0;
+	
 }
 .banner h1{
 	font-size: 60px;
@@ -281,7 +326,7 @@ body,html{
   text-align: center;
 }
 .about-box{
-	background: #020f46;
+	background: #3f119b;
 	padding: 30px;
 }
 .about-box ul{
@@ -294,6 +339,149 @@ body,html{
 	margin-bottom: 20px;
 }
 
+/*contact-section*/
+.contact-section {
+  background:#020f46;
+  color: #fff; 
+}
+.contact_section_left {
+  padding: 40px 0; 
+}
+.contact_box{
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+.contact_box:last-child {
+  margin-bottom: 0px;
+}
+.contact_box h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.contact_box i.fa {
+  color: #fff;
+  font-size: 30px;
+  display: block;
+  padding: 0 0 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #fff; 
+}
+.contact_section_right {
+	padding: 40px 0; 
+	background-color:  #020f46
+}
+.contact_section_right h2 {
+  color: #fff; 
+  margin-bottom: 30px;
+}
+input:not([type="submit"]),
+textarea{
+	border: 1px solid #abb3c0;
+	color: #667080;
+	padding: 10px 16px;
+	margin: 0 0 15px 0;
+	font: 14px/22px "Open Sans", sans-serif;
+	background-color: white;
+	height: 42px;
+	outline: none;
+	width: 100%;
+	text-align: left;
+	border-radius: 4px;
+}
+textarea{
+	height: 80px
+}
+input[type="submit"]{
+	border: 0px;
+  color: white;
+  background: #010519;
+  padding: 11px 25px;
+  margin: 0 0 15px 0;
+  font: 14px/20px "Open Sans", sans-serif;
+  height: 42px;
+  outline: none;
+  width: auto;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+input[type="submit"]:hover{
+	color: #f12626;
+}
+
+
+/*portfolio-section*/
+.portfolio-section{
+	padding: 80px 0;
+	background-color: #000
+}
+.portfolio-section h2{
+	font-size: 40px;
+	color: #fff;
+	margin: 0 0 30px;
+}
+.portfolio-box{
+	padding-bottom: 70%;
+	background-size: cover;
+	background-position: center center;
+	margin:30px 15px 30px;
+	transition: all 0.3s ease-out;
+	background-blend-mode: darken;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.portfolio-box:hover{
+	background-color:#0021a7;
+}
+.portfolio-box h3 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+	color: #fff;
+	transition: all 0.3s ease-out;
+	transform: scale(5);
+	opacity: 0;
+	pointer-events: none;
+}
+.portfolio-box:hover h3{
+	transform: scale(1);
+	opacity: 1;
+}
+#port_pop_pic_bg{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background: rgba(0,0,0,0.8);
+	opacity: 0;
+	transition: all 0.3s ease-out; 
+	pointer-events: none;
+}
+#port_pop_pic_bg.active{
+	opacity: 1;
+	pointer-events: auto;
+}
+#port_pop_pic{
+	position: fixed;
+	left: 100px;
+	top: 100px; 
+	width: calc(100% - 200px);
+	height: calc(100% - 200px);
+	z-index: 1000;
+	transform: scale(0);
+	transition: all 0.3s ease-out; 
+	background-size: cover;
+	background-position: center center;
+}
+#port_pop_pic.active{
+	transform: scale(1);
 /*contact-section*/
 .contact-section {
   background:#010519;
@@ -363,8 +551,6 @@ input[type="submit"]{
 input[type="submit"]:hover{
 	color: #f12626;
 }
-
-
 /*ChatBot*/
 .chat_icon{
 	position: fixed;
@@ -426,7 +612,7 @@ input[type="submit"]:hover{
 	}	
 
 	.banner{
-		background-size: 200%;
+		background-size:100% 100%;
 		background-position: top center;
     background-repeat: no-repeat;
 	}
